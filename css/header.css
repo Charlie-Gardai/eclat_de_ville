@@ -1,0 +1,46 @@
+header {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+}
+
+header h1 span, header h2 span {
+	font-family:Shrapnel;
+	transition:color .3s;
+}
+
+header h1, h2 { cursor:default; }
+
+header h1 span:hover { color:#cc0000; }
+
+header h2 {	position:relative; }
+header h2 span:hover { color:#cc6600; }
+
+header #to__start {
+	font-size:30px;
+	position:absolute;
+	bottom:10vh;
+	transform-origin:top;
+	opacity:.2;
+	cursor:;
+	transition:all 3s;
+}
+header #to__start .down_icon {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+}
+header #to__start .down_icon .icon { font-family:Shrapnel; font-style:normal; }
+header #to__start .down_icon .icon:nth-child(2) {
+	position:relative;
+	top:-32px;
+}
+header #to__start:hover {
+	transform:scale(2);
+	opacity:1;
+	transition:all 1s;
+}

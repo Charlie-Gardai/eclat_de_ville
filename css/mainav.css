@@ -1,0 +1,42 @@
+#nav__main {
+	border-left:1px solid black;
+	position:fixed;
+	left:2vw;
+	top:3vh;
+	z-index:50;
+	padding:15px 0 30px 15px;
+}
+
+.nav__vert {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+}
+
+#nav__main .nav__sub {
+	height:0;
+	position:relative;
+	left:2vw;
+	top:-10px;
+	padding:5px;
+	overflow:hidden;
+	transition:height .5s;
+}
+
+#nav__main #link__galerie:hover ~ #subnav__galerie, #nav__main #subnav__galerie:hover {
+	height:200px;
+}
+
+#nav__main a {
+	text-shadow:1px 1px 1px rgba(0,0,0,.5);
+	margin-bottom:7px;
+	padding:5px;
+	transition:padding-left .75s;
+}
+
+#nav__main a:hover {
+	padding-left:1.5vw;
+	transition:padding-left .5s;
+}
+
+#nav__main .link__main { font-weight:bold; }
